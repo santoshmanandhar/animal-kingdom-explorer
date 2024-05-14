@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.myapplication.dashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_animalDetailsFragment"
+            app:destination="@id/animalDetailsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_speciesDetailsFragment"
+            app:destination="@id/speciesDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalDetailsFragment"
+        android:name="com.example.myapplication.animalDetailsFragment"
+        android:label="fragment_animal_details"
+        tools:layout="@layout/fragment_animal_details" >
+        <action
+            android:id="@+id/action_animalDetailsFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/speciesDetailsFragment"
+        android:name="com.example.myapplication.speciesDetailsFragment"
+        android:label="fragment_species_details"
+        tools:layout="@layout/fragment_species_details" >
+        <action
+            android:id="@+id/action_speciesDetailsFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+</navigation>

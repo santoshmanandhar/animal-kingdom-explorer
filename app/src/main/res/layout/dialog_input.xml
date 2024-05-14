@@ -1,0 +1,24 @@
+<!-- dialog_input.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Animal Name" />
+
+    <EditText
+        android:id="@+id/input_habitat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Habitat" />
+
+    <EditText
+        android:id="@+id/input_diet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Diet" />
+</LinearLayout>
